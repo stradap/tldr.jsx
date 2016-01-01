@@ -1,6 +1,8 @@
 import React from 'react';
 import { History } from 'react-router';
 
+import GithubOctocat from './GithubOctocat';
+
 import { Command } from '../actions/Command';
 import CommandStore from '../stores/Command';
 
@@ -27,7 +29,7 @@ export default React.createClass({
       <form action="." id="search-bar">
         <span>&gt; tldr </span>
         <input
-          autocomplete="off"
+          autoComplete="off"
           autofocus="true"
           id="search"
           onChange={this._handleChange}
@@ -38,6 +40,7 @@ export default React.createClass({
           type="search"
           value={this.state.query}
         />
+        <GithubOctocat path="ostera/tldr.jsx"/>
       </form>
     );
   },
