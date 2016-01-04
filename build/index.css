@@ -65,6 +65,9 @@ body {
     #tldr #page ul li {
       padding: 0.5em 0.55em;
       line-height: 1.1; }
+      #tldr #page ul li code {
+        padding: 0.3rem;
+        display: inline-block; }
   @media only screen and (orientation: landscape) {
     #tldr #page {
       margin-top: 5em; } }
