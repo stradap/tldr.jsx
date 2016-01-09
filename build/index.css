@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: Helvetica Neue, Helvetica;
   font-size: 1em; }
@@ -34,6 +35,11 @@ body {
     border: none;
     border-radius: 2px;
     outline: none; }
+  #tldr #search-bar .icon-close:before {
+    content: "✕";
+    position: relative;
+    left: -1rem;
+    color: #151515; }
   @media only screen and (orientation: landscape) {
     #tldr #search-bar {
       font-size: 2em; } }
