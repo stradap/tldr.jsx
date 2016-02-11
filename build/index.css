@@ -46,45 +46,47 @@ body {
   @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
     #tldr #search-bar {
       font-size: 1em; } }
-#tldr #page {
+#tldr #suggestion {
+  margin: 1em 0.5em; }
+#tldr #page-container {
   font-size: 1.25em;
   margin-top: 4em; }
-  #tldr #page p {
+  #tldr #page-container p {
     margin: 0; }
-  #tldr #page h1 {
+  #tldr #page-container h1 {
     font-size: 2em;
     margin: 0 0.23em; }
-  #tldr #page blockquote {
+  #tldr #page-container blockquote {
     margin: 0 0.55em; }
-  #tldr #page code {
+  #tldr #page-container code {
     font-family: "Source Code Pro", courier new, courier;
     background-color: #f2f2f2;
     color: #212121;
     display: block;
     padding: 0.55em 1.25em;
     margin: 0; }
-  #tldr #page ul {
+  #tldr #page-container ul {
     list-style: none;
     padding: 0 !important;
     margin: 1em 0 0 0; }
-    #tldr #page ul li {
+    #tldr #page-container ul li {
       padding: 0.5em 0.55em;
       line-height: 1.1; }
-      #tldr #page ul li code {
+      #tldr #page-container ul li code {
         padding: 0.3rem;
         display: inline-block; }
   @media only screen and (orientation: landscape) {
-    #tldr #page {
+    #tldr #page-container {
       margin-top: 5em; } }
   @media only screen and (min-device-width: 1024px) {
-    #tldr #page {
+    #tldr #page-container {
       font-size: 1em;
       margin-top: 3em; }
-      #tldr #page code {
+      #tldr #page-container code {
         padding-left: 3em; }
-      #tldr #page ul {
+      #tldr #page-container ul {
         margin-top: 1em; }
-        #tldr #page ul li:before {
+        #tldr #page-container ul li:before {
           content: "*";
           padding: 0 12px; } }
 
