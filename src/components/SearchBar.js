@@ -66,7 +66,7 @@ export default React.createClass({
   render: function () {
     return (
       <div id="search-bar">
-        <span>&gt tldr </span>
+        <span>&gt; tldr </span>
         <input
           autoComplete="off"
           autofocus="true"
@@ -96,7 +96,10 @@ export default React.createClass({
   },
 
   navigate: function (query) {
-    this.props.history.replace(query)
+    this.props.history.replace({
+      pathname: query,
+      search: location.search
+    })
   },
 
 })
