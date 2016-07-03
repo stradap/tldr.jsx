@@ -1,93 +1,176 @@
-@charset "UTF-8";
 * {
-  font-family: Helvetica Neue, Helvetica;
+  font-family: Avenir Next;
   font-size: 1em; }
 
 body {
   margin: 0;
-  background: #FEFEFE;
-  color: #151515; }
+  padding: 0;
+  background: #F8F8F8;
+  color: #393939; }
 
-.github-corner {
-  border: 0;
-  fill: #FEFEFE;
-  position: fixed;
+h1, h2, h3 {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em; }
+
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.3em; }
+
+code {
+  font-family: Source Code Pro, Courier New, Courier, monospace; }
+
+p {
+  margin: 0;
+  padding: 0;
+  padding: 0.5em 0; }
+
+a {
+  font-variant: small-caps;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #54B59A; }
+
+.content {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 300px;
+  width: 80%; }
+  @media only screen and (orientation: landscape) {
+    .content {
+      margin-top: 20px; } }
+  @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
+    .content {
+      margin-top: 60px; } }
+  @media only screen and (orientation: landscape) {
+    .content {
+      max-width: 720px; } }
+  @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
+    .content {
+      max-width: 720px; } }
+
+.loading {
+  font-size: 1em; }
+
+#tldr .debug {
+  margin: 0;
+  padding: 0;
+  padding: 2em;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   right: 0;
-  top: 0;
-  z-index: 99;
-  padding: 0.5em; }
-  @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
-    .github-corner {
-      padding: 0.2em; } }
-
-#tldr #search-bar {
-  font-size: 1.5em;
-  background-color: #151515;
-  color: #FEFEFE;
-  padding: 0.5em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; }
-  #tldr #search-bar * {
-    font-family: "Source Code Pro", courier new, courier; }
-  #tldr #search-bar input, #tldr #search-bar input:focus {
-    border: none;
-    border-radius: 2px;
-    outline: none; }
-  #tldr #search-bar .icon-close:before {
-    content: "✕";
-    position: relative;
-    left: -1rem;
-    color: #151515; }
+  background-color: #393939;
+  color: #F8F8F8;
+  font-family: Source Code Pro, Courier New, Courier, monospace;
+  font-size: 0.7em;
+  white-space: pre-wrap; }
   @media only screen and (orientation: landscape) {
-    #tldr #search-bar {
-      font-size: 2em; } }
+    #tldr .debug {
+      height: 70%; } }
   @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
-    #tldr #search-bar {
-      font-size: 1em; } }
-#tldr #suggestion {
-  margin: 1em 0.5em; }
-#tldr #page-container {
-  font-size: 1.25em;
-  margin-top: 4em; }
-  #tldr #page-container p {
-    margin: 0; }
-  #tldr #page-container h1 {
-    font-size: 2em;
-    margin: 0 0.23em; }
-  #tldr #page-container blockquote {
-    margin: 0 0.55em; }
-  #tldr #page-container code {
-    font-family: "Source Code Pro", courier new, courier;
-    background-color: #f2f2f2;
-    color: #212121;
-    display: block;
-    padding: 0.55em 1.25em;
-    margin: 0; }
-  #tldr #page-container ul {
-    list-style: none;
-    padding: 0 !important;
-    margin: 1em 0 0 0; }
-    #tldr #page-container ul li {
-      padding: 0.5em 0.55em;
-      line-height: 1.1; }
-      #tldr #page-container ul li code {
-        padding: 0.3rem;
-        display: inline-block; }
+    #tldr .debug {
+      height: 70%; } }
   @media only screen and (orientation: landscape) {
-    #tldr #page-container {
-      margin-top: 5em; } }
-  @media only screen and (min-device-width: 1024px) {
-    #tldr #page-container {
-      font-size: 1em;
-      margin-top: 3em; }
-      #tldr #page-container code {
-        padding-left: 3em; }
-      #tldr #page-container ul {
-        margin-top: 1em; }
-        #tldr #page-container ul li:before {
-          content: "*";
-          padding: 0 12px; } }
+    #tldr .debug {
+      width: 350px; } }
+  @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
+    #tldr .debug {
+      width: 350px; } }
+  #tldr .debug span {
+    cursor: pointer;
+    float: right; }
+  #tldr .debug h2 {
+    margin-bottom: 1em; }
+#tldr .brand {
+  background: url("assets/tldr.svg");
+  background-size: 105px 30px;
+  display: inline-block;
+  width: 105px;
+  height: 30px; }
+#tldr .brand.small {
+  background: url("assets/tldr.svg");
+  background-size: 52px 15px;
+  display: inline-block;
+  width: 52px;
+  height: 15px;
+  position: relative;
+  top: 3px; }
+#tldr nav {
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  border-bottom: 1px solid #54B59A; }
+  #tldr nav .content {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 300px; }
+    @media only screen and (orientation: landscape) {
+      #tldr nav .content {
+        max-width: 720px; } }
+    @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
+      #tldr nav .content {
+        max-width: 720px; } }
+  #tldr nav a.brand {
+    margin-top: 16px; }
+  #tldr nav input {
+    display: inline-block;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 5px;
+    height: 38px;
+    width: 165px;
+    max-width: 165px;
+    border: 1px solid #54B59A;
+    border-radius: 0px;
+    font-size: 16pt;
+    padding: 0px 6px; }
+    @media only screen and (orientation: landscape) {
+      #tldr nav input {
+        margin-left: 30px; } }
+    @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
+      #tldr nav input {
+        margin-left: 30px; } }
+    @media only screen and (orientation: landscape) {
+      #tldr nav input {
+        width: 220px; } }
+    @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
+      #tldr nav input {
+        width: 220px; } }
+    @media only screen and (orientation: landscape) {
+      #tldr nav input {
+        max-width: 60%; } }
+    @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
+      #tldr nav input {
+        max-width: 60%; } }
+    @media only screen and (orientation: landscape) {
+      #tldr nav input {
+        padding: 0px 12px; } }
+    @media only screen and (min-device-width: 1024px) and (min-device-height: 728px) {
+      #tldr nav input {
+        padding: 0px 12px; } }
+    #tldr nav input:focus {
+      outline-color: #54B59A; }
+#tldr .page blockquote, #tldr .page ul, #tldr .page li, #tldr .page code, #tldr .page p {
+  margin: 0;
+  padding: 0; }
+#tldr .page blockquote {
+  font-size: 1.2em;
+  margin-bottom: 30px; }
+#tldr .page li {
+  list-style: none; }
+#tldr .page code {
+  font-family: Source Code Pro, Courier New, Courier, monospace;
+  display: inline-block;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 35px; }
 
 /*# sourceMappingURL=index.css.map */
